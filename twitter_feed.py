@@ -8,8 +8,8 @@ class TweetListener(StreamListener):
 
     def on_data(self,data):
         firehose_client = boto3.client('firehose', 'us-west-2',
-                                        aws_access_key_id='AKIAXWWOC5M7BHL27BVS',
-                                        aws_secret_access_key='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'
+                                        aws_access_key_id='',
+                                        aws_secret_access_key=''
                                        )
         try:
             print ("putting data")
@@ -27,8 +27,8 @@ class TweetListener(StreamListener):
     def on_error(self, status):
         print (status)
 
-auth=OAuthHandler('7BUpIPfl7we8BBqgopUOX1iEl', 'b3RQvF1a77KRhQdAJwVlYIX108AfZDuyfSkAEUUbNQK6HYg3mH')
-auth.set_access_token('485919538-J9ZK9OSw2AaukXBnspLsqGxmcVmsyYk3I8bzHbJu', 'cTlK8gLNeqSoBUGNAnBT8WITaLN6OcfpKYtYxGpTsVTbX')
+auth=OAuthHandler('', '')
+auth.set_access_token('', '')
 
 twitter_stream = Stream(auth, TweetListener())
 hastag =  sys.argv[1] 
