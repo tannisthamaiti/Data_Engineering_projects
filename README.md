@@ -35,6 +35,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Kinesis
 https://medium.com/@siprem/streaming-twitter-feed-using-kinesis-data-firehose-and-redshift-745c96d04f58
 https://www.mydatahack.com/moving-data-in-s3-and-redshift-with-python/
+https://github.com/spulec/moto/blob/master/tests/test_kinesis/test_firehose.py
 
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
