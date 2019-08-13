@@ -24,5 +24,21 @@ cur.execute(sql)
 cur.execute("commit;")
 print("Copy executed fine!")
 
+import luigi
+from luigi.s3 import S3Target, S3Client
 
+class myTask(luigi.Task):
+    def requires(self):
+        return otherTask()
+
+    def output(self):
+        client = S3Client('ACCESS_KEY', 'SECRET_KEY')
+        return S3Target('s3.amazonaws.com/mybucket/myfolder/myfile.tsv', client=client)
+
+    def run(self):
+         fo = self.output().open('w')
+         with self.input().open('r') as f:
+            data = dosomething_to_input(f)
+            fo.write(data)
+         fo.close()
 
