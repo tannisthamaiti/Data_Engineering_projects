@@ -4,8 +4,8 @@ user = 'titliaws'
 password = ''
 aws_access_key_id = ''
 aws_secret_access_key = ''
-host = 'redshift-cluster-1.c8f9su7uxkwy.us-west-2.redshift.amazonaws.com'
-host1 = 'aws_iam_role=arn:aws:iam::704795387860:role/RedshiftCopyUnload' #myRedshiftRole
+host = 'redshift-cluster-1.****.us-west-2.redshift.amazonaws.com'
+host1 = 'aws_iam_role=arn:aws:iam::****:role/RedshiftCopyUnload' #myRedshiftRole
 
 import psycopg2
 #Amazon Redshift connect string
