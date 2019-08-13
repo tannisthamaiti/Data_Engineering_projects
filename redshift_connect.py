@@ -10,7 +10,7 @@ host1 = 'aws_iam_role=arn:aws:iam::****:role/RedshiftCopyUnload' #myRedshiftRole
 import psycopg2
 #Amazon Redshift connect string
 conn_string = "dbname='dev' port= '5439' user= 'titliaws' password= '' \
-            host= 'training007.cwgovfgtdjch.us-west-2.redshift.amazonaws.com'"
+            host= 'training007.*****.us-west-2.redshift.amazonaws.com'"
 con = psycopg2.connect(conn_string);
 #to_table = 'users'
 to_table = 'tweets'
