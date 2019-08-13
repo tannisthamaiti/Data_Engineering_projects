@@ -41,4 +41,4 @@ class myTask(luigi.Task):
             data = dosomething_to_input(f)
             fo.write(data)
          fo.close()
-
+#http://engineering.pivotal.io/post/luigi-data-science/?utm_campaign=pivotal-website-social&utm_medium=social-sprout&utm_source=twitter&utm_content=1496168745
